@@ -1,0 +1,58 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %} Okejos {% endblock %}
+{% block content %}
+
+
+
+
+  <!-- ***** Header Area End ***** -->
+
+  <!-- ***** Breadcrumb Area Start ***** -->
+  <div class="breadcumb-area bg-img bg-gradient-overlay" style="background-image: url({% static 'website/img/bg-img/12.jpg' %});">
+    <div class="container h-100">
+      <div class="row h-100 align-items-center">
+        <div class="col-12">
+          <h2 class="title">Contact</h2>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="breadcumb--con">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="#"><i class="fa fa-home"></i> Home</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Contact</li>
+            </ol>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ***** Breadcrumb Area End ***** -->
+<center>
+<h1>Siemano</h1>
+
+<h3> No więc tak</h3>
+<p>{{your_schedule }}</p>
+
+<strong>Your name:</strong> {{your_name }}<br/>
+    <strong>Your phone:</strong>{{your_phone }}<br/>
+ <strong>Your e-mail:</strong>{{your_email }}<br/>
+<strong>Your address:</strong>{{your_address }}<br/>
+<strong>Your day:</strong>{{your_time }}<br/>
+
+
+<center/>
+    <br/> <br/> <br/> <br/> <br/>
+
+
+  <!-- ***** Contact Area End ***** -->
+  <!-- ***** Footer Area End ***** -->
+
+
+   {% endblock %}
